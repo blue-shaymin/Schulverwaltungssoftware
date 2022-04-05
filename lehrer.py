@@ -20,17 +20,5 @@ class Lehrer(Mitarbeiter):
         super().__init__(vorname, nachname, geburtsdatum)
         self.dienstbezeichnung = dienstbezeichnung
 
-    def melde_defekt(self, geraet):
-        """
-        Setzt das Attribut ist_defekt der Klasse geraet auf True
-
-        Parameter
-        ---------
-        geraet : Geraet
-            Ein Gerät, bei dem ein Defekt festgestellt wurde
-
-        """
-        geraet.ist_defekt = True
-
     def unterrichten(self, klasse):
         pass
