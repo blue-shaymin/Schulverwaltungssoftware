@@ -1,6 +1,6 @@
 from lehrer import Lehrer
 from hausmeister import Hausmeister
-from geraet import  Geraet
+from geraet import Geraet
 import datetime
 
 if __name__ == "__main__":

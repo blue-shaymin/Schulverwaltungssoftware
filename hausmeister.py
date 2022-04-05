@@ -1,4 +1,5 @@
-class Hausmeister:
+from mitarbeiter import Mitarbeiter
+class Hausmeister(Mitarbeiter):
     """
     Diese Klasse repräsentiert den Hausmeister einer Schule
 
@@ -13,13 +14,8 @@ class Hausmeister:
     """
 
     def __init__(self, vorname, nachname, geburtsdatum):
-        self.vorname = vorname
-        self.nachname = nachname
-        self.geburtsdatum = geburtsdatum
+       super().__init__(vorname, nachname, geburtsdatum)
 
-    def melde_defekt(self, geraet):
-        # TODO : Funktionalität umsetzen
-        pass
 
     def repariere_geraet(self, geraet):
         """ Setze den Zustand des Geräts auf: nicht defekt"""

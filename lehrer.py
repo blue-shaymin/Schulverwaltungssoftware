@@ -1,4 +1,5 @@
-class Lehrer:
+from mitarbeiter import Mitarbeiter
+class Lehrer(Mitarbeiter):
     """
     Diese Klasse repräsentiert eine Lehrkraft
 
@@ -16,9 +17,7 @@ class Lehrer:
     """
 
     def __init__(self, vorname, nachname, geburtsdatum, dienstbezeichnung):
-        self.vorname = vorname
-        self.nachname = nachname
-        self.geburtsdatum = geburtsdatum
+        super().__init__(vorname, nachname, geburtsdatum)
         self.dienstbezeichnung = dienstbezeichnung
 
     def melde_defekt(self, geraet):
